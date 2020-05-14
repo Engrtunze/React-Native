@@ -4,16 +4,18 @@ import {Header} from "../sections/Header";
 import {Hero} from "../sections/Hero";
 import {Menu} from "../sections/Menu";
 
+export class Contact extends React.Component{
+    static navigationOptions = {
+        header: null
+    }
 
-export class Home extends React.Component{
 
     render() {
-        const {navigate} = this.props.navigation;
-        return(
+        return (
             <View style={styles.container}>
-                <Header message = 'Press to Login'/>
-                <Hero />
-               < Menu navigate ={ navigate } />
+                <Header message='Press to Login'/>
+                <Text style={{flex: 8}}>The Contact form will go here</Text>
+                <Text style={{flex: 6}}>The Contact form will go here</Text>
             </View>
 
         );
