@@ -3,6 +3,8 @@ import {StyleSheet,View, TouchableOpacity, Text, Alert} from 'react-native';
 
 export class Menu extends React.Component{
 
+
+
     onPress = ()=>
     {
         Alert.alert('You tapped the butten!');
@@ -26,7 +28,7 @@ export class Menu extends React.Component{
                     <TouchableOpacity style={styles.buttonstyles} onPress={ this.onPress}>
                         <Text style={styles.buttonText}>BLOG</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttonstyles} onPress={ () => this.props.navigate('ContactRt')}>
+                    <TouchableOpacity style={styles.buttonstyles} onPress={ () => this.props.navigate('Contact')}>
                         <Text style={styles.buttonText}>CONTACT</Text>
                     </TouchableOpacity>
 

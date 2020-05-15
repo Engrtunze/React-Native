@@ -4,9 +4,12 @@ import {Header} from "../sections/Header";
 import {Hero} from "../sections/Hero";
 import {Menu} from "../sections/Menu";
 
+
+
 export class Contact extends React.Component{
     static navigationOptions = {
-        header: null
+
+        headerShown : false,
     }
 
 

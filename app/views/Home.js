@@ -7,6 +7,11 @@ import {Menu} from "../sections/Menu";
 
 export class Home extends React.Component{
 
+    static navigationOptions = {
+
+        headerShown : false,
+    }
+
     render() {
         const {navigate} = this.props.navigation;
         return(
