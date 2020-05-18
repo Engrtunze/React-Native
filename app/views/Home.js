@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, } from 'react-native';
 import {Header} from "../sections/Header";
 import {Hero} from "../sections/Hero";
 import {Menu} from "../sections/Menu";
@@ -16,7 +16,7 @@ export class Home extends React.Component{
         const {navigate} = this.props.navigation;
         return(
             <View style={styles.container}>
-                <Header message = 'Press to Login'/>
+                <Header navigate ={ navigate }  message = 'Press to Login'/>
                 <Hero />
                < Menu navigate ={ navigate } />
             </View>
